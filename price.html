@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> vayunavi - pricing </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body >
+    <!-- navbar code for weather update app -->
+    <nav style="background-color: black;" class="navbar navbar-dark  fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">   <svg width="92" height="15" viewBox="0 0 92 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.50284 0.909091L6.6669 10.8551H6.78835L9.95881 0.909091H13.027L8.5142 14H4.94744L0.428267 0.909091H3.50284ZM15.1188 14H12.1529L16.6721 0.909091H20.2388L24.7516 14H21.7857L18.5066 3.90057H18.4043L15.1188 14ZM14.9334 8.8544H21.9391V11.0149H14.9334V8.8544ZM24.2243 0.909091H27.3244L30.3095 6.54688H30.4373L33.4224 0.909091H36.5226L31.7477 9.37216V14H28.9991V9.37216L24.2243 0.909091ZM46.1202 0.909091H48.888V9.41051C48.888 10.3651 48.66 11.2003 48.204 11.9162C47.7523 12.6321 47.1195 13.1903 46.3056 13.5909C45.4917 13.9872 44.5435 14.1854 43.4611 14.1854C42.3745 14.1854 41.4242 13.9872 40.6103 13.5909C39.7963 13.1903 39.1635 12.6321 38.7118 11.9162C38.2601 11.2003 38.0343 10.3651 38.0343 9.41051V0.909091H40.802V9.17401C40.802 9.67259 40.9107 10.1158 41.128 10.5036C41.3496 10.8913 41.6607 11.196 42.0613 11.4176C42.4618 11.6392 42.9284 11.75 43.4611 11.75C43.998 11.75 44.4647 11.6392 44.861 11.4176C45.2615 11.196 45.5705 10.8913 45.7878 10.5036C46.0094 10.1158 46.1202 9.67259 46.1202 9.17401V0.909091Z" fill="#9DF346"/>
+          <path d="M62.0764 0.909091V14H59.967L53.7987 5.0831H53.69V14H51.3185V0.909091H53.4407L59.6026 9.83239H59.7177V0.909091H62.0764ZM66.3414 14H63.8102L68.4189 0.909091H71.3464L75.9615 14H73.4302L69.9338 3.59375H69.8315L66.3414 14ZM66.4245 8.86719H73.3279V10.772H66.4245V8.86719ZM77.943 0.909091L81.35 11.2131H81.4842L84.8848 0.909091H87.4927L82.8777 14H79.9501L75.3414 0.909091H77.943ZM91.5884 0.909091V14H89.217V0.909091H91.5884Z" fill="white"/>
+          </svg></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header bg-dark">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <svg width="92" height="15" viewBox="0 0 92 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.50284 0.909091L6.6669 10.8551H6.78835L9.95881 0.909091H13.027L8.5142 14H4.94744L0.428267 0.909091H3.50284ZM15.1188 14H12.1529L16.6721 0.909091H20.2388L24.7516 14H21.7857L18.5066 3.90057H18.4043L15.1188 14ZM14.9334 8.8544H21.9391V11.0149H14.9334V8.8544ZM24.2243 0.909091H27.3244L30.3095 6.54688H30.4373L33.4224 0.909091H36.5226L31.7477 9.37216V14H28.9991V9.37216L24.2243 0.909091ZM46.1202 0.909091H48.888V9.41051C48.888 10.3651 48.66 11.2003 48.204 11.9162C47.7523 12.6321 47.1195 13.1903 46.3056 13.5909C45.4917 13.9872 44.5435 14.1854 43.4611 14.1854C42.3745 14.1854 41.4242 13.9872 40.6103 13.5909C39.7963 13.1903 39.1635 12.6321 38.7118 11.9162C38.2601 11.2003 38.0343 10.3651 38.0343 9.41051V0.909091H40.802V9.17401C40.802 9.67259 40.9107 10.1158 41.128 10.5036C41.3496 10.8913 41.6607 11.196 42.0613 11.4176C42.4618 11.6392 42.9284 11.75 43.4611 11.75C43.998 11.75 44.4647 11.6392 44.861 11.4176C45.2615 11.196 45.5705 10.8913 45.7878 10.5036C46.0094 10.1158 46.1202 9.67259 46.1202 9.17401V0.909091Z" fill="#9DF346"/>
+                <path d="M62.0764 0.909091V14H59.967L53.7987 5.0831H53.69V14H51.3185V0.909091H53.4407L59.6026 9.83239H59.7177V0.909091H62.0764ZM66.3414 14H63.8102L68.4189 0.909091H71.3464L75.9615 14H73.4302L69.9338 3.59375H69.8315L66.3414 14ZM66.4245 8.86719H73.3279V10.772H66.4245V8.86719ZM77.943 0.909091L81.35 11.2131H81.4842L84.8848 0.909091H87.4927L82.8777 14H79.9501L75.3414 0.909091H77.943ZM91.5884 0.909091V14H89.217V0.909091H91.5884Z" fill="white"/>
+                </svg>
+            </h5>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="background-color: #242424;">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="price.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  weather update
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="price.html">1 day update</a></li>
+                  <li><a class="dropdown-item" href="price.html">2 days update</a></li>
+                  <li><a class="dropdown-item" href="price.html">8 days update</a></li>
+                  
+                   
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="price.html">Weather Notification</a>
+              </li>
+            
+            </ul>
+            <form id="search-form" class="d-flex" type="submit">
+              <input id="search-input" class="form-control me-2" placeholder="Search by city name" aria-label="Search">
+              <button  id="search-btn" class="btn btn-outline-success" style="background-color: #9df346;" type="submit">Search</button>
+            </form>
+          </div>      
+        </div>
+      </div>
+    </nav>
+    
+    <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Pricing</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
+            <div class="flex mx-auto border-2 border-green-500 rounded overflow-hidden mt-6">
+              <button class="py-1 px-4 bg-green-500 text-white focus:outline-none">Monthly</button>
+              <button class="py-1 px-4 focus:outline-none">Annually</button>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium">NORMAL</h2>
+                <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>See your current weather
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Search any city current weather
+                </p>
+                <p class="flex items-center text-gray-600 mb-6">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span> one hour weather update 
+                </p>
+                <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                <p class="text-xs text-gray-500 mt-3">Subscribe now its Free and grab all update.</p>
+              </div>
+            </div>
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-green-500 flex flex-col relative overflow-hidden">
+                <span class="bg-green-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PRO</h2>
+                <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                  <span>$10</span>
+                  <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                </h1>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>See your current city weather
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>search any city current weather
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span> 1 hour weather update
+                </p>
+                <p class="flex items-center text-gray-600 mb-6">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>8 hour weather update
+                </p>
+                <button class="flex items-center mt-auto text-white bg-green-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-600 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                <p class="text-xs text-gray-500 mt-3">Subscribe now and grab all personalize update.</p>
+              </div>
+            </div>
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PERSONAL</h2>
+                <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                  <span>$16</span>
+                  <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                </h1>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span> Free + Pro Feature
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>one week weather update
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>one month weather update
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span> weather update send your email daily 
+                </p>
+                <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                <p class="text-xs text-gray-500 mt-3">Subscribe now its and grab all personalize update.</p>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

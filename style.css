@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* header style */
+.main-container{
+     margin-top: 5rem; 
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+     margin-left: clamp(4rem, 5vw, 10rem);   
+}
+
+.city-container,.temp-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.allow-location{
+    width: 10rem;
+    margin-top: 2rem;
+    background-color: #9df346;
+    border: 2px solid #9df346;
+    border-radius: 0.2rem;
+    font-size: clamp(1.2em,2vw,1.5rem);
+    cursor: pointer;
+    transition: all 400ms 10ms;
+  
+}
+.allow-location:hover{
+    box-shadow: 0px 0px 10px -2px #9df346;
+    transform: scale(1.05, 1.1);
+}
+
+
+
+
+/* second-container style */
+.second-container{
+    display: flex;
+    flex-flow: row wrap;
+
+
+    color: white;
+    text-align: center;
+    
+    margin-top: 4rem;
+    
+
+}
+
+.wind-container,.humidity-container,.visibility-container{
+    padding: 2% 4%;
+    background-color: #242424;
+    border: 2px solid #242424 ;
+    margin: 3rem;
+    border-radius: .3rem;
+    flex-grow: 1;
+    transition: all 400ms 10ms;
+    cursor: pointer;
+}
+.visibility-container:hover{
+    box-shadow: 0px 0px 25px 2px #9df346;
+    transform: scale(1.1, 1.2);
+}
+.humidity-container:hover{
+    box-shadow: 0px 0px 25px 2px #9df346;
+    transform: scale(1.1, 1.2);
+}
+.wind-container:hover{
+    box-shadow: 0px 0px 25px 2px #9df346;
+    transform: scale(1.1, 1.2);
+}
+.name{
+    font-size: clamp(2em,3vw,3rem);
+    letter-spacing: .08rem;
+}
+.wind-speed,.visibility,.humidity{
+    font-size: clamp(2.2em,3vw,3.2rem);
+    color: #9df346;
+}
+
+        
+
+
+.notify-container {
+    border: 16px solid rgb(91, 91, 91);
+    border-top: 16px solid #9df346; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 700ms linear infinite;
+    margin: 0 3rem;
+    display: none;
+    
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg);
+     }
+    100% { transform: rotate(360deg); 
+    }
+  }
